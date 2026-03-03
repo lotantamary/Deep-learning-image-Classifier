@@ -1,0 +1,7 @@
+tensorflow>=2.15.0
+tensorflow-hub
+numpy
+pillow
+setuptools<70.0.0
+tf_keras
+matplotlib
