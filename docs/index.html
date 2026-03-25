@@ -215,6 +215,7 @@ Percentage values represent model confidence. For mixed breeds, multiple high-co
         const imagePreview = document.getElementById('image-preview');
         const classifyBtn = document.getElementById('classify-btn');
         const resetBtn = document.getElementById('reset-btn');
+        let selectedFile = null;
 
         // Drag & Drop Handlers
         dropZone.addEventListener('click', () => {
@@ -242,6 +243,7 @@ Percentage values represent model confidence. For mixed breeds, multiple high-co
         });
 
         function handleFile(file) {
+            selectedFile = file;
             const reader = new FileReader();
             reader.onload = (e) => {
                 imagePreview.src = e.target.result;
@@ -254,6 +256,7 @@ Percentage values represent model confidence. For mixed breeds, multiple high-co
 
         resetBtn.addEventListener('click', () => {
             fileInput.value = '';
+            selectedFile = null;
             previewState.classList.add('hidden');
             previewActions.classList.remove('hidden');
             initialState.classList.remove('hidden');
@@ -262,7 +265,7 @@ Percentage values represent model confidence. For mixed breeds, multiple high-co
 
         classifyBtn.addEventListener('click', async (e) => {
             e.stopPropagation();
-            const file = fileInput.files[0];
+            const file = selectedFile || fileInput.files[0];
             if (!file) return;
 
             // UI State: Loading
