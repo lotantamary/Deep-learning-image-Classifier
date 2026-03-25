@@ -16,3 +16,11 @@ Thumbs.db
 
 # VS Code settings
 .vscode/
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Web app
+web/node_modules/
+web/.env
