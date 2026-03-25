@@ -3,7 +3,7 @@ config({ path: "web/.env" });
 import { stitch } from "@google/stitch-sdk";
 import { writeFileSync } from "fs";
 
-const OUTPUT_FILE = "web/index.html";
+const OUTPUT_FILE = "docs/index.html";
 const PLACEHOLDER_URL = "MODAL_PREDICT_URL";
 
 const PROMPT = `
