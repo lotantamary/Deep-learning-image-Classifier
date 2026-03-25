@@ -113,9 +113,7 @@
                 Dog Breed <br/>
 <span class="text-primary italic">Classifier</span>
 </h2>
-<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                Drop a photo of your dog — our AI will identify the breed in seconds. 🐾
-            </p>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">Drop a photo of your dog. Our AI will identify the breed in seconds. 🐾</p>
 </div>
 <!-- Technical Specifications — above the grid -->
 <div class="p-8 bg-surface-container-low rounded-xl mb-12 text-center">
@@ -144,29 +142,14 @@
 </a>
 </div>
 </div>
-<!-- Upload Grid — dog photo aligned with drop zone -->
-<div class="grid lg:grid-cols-12 gap-8 items-stretch">
-<!-- Dog photo — 4 cols, same height as drop zone -->
-<div class="lg:col-span-4 hidden lg:block">
-<div class="relative overflow-hidden rounded-xl h-full group min-h-[420px]">
-<img alt="Candid dog portrait" class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJoy4wV5FRXORm69OlrtmqN5HvW_GgrK0aq2nvWV8s9t0WpoR32AOT77BnKJXitf38H8k6WQNF5lS8V5sRC-HK5ZFSMnRuifG7A9xJqAkZK_bXSGfUDEa61MmUFAuv9FsPymGDa-pIE-hRWxrF8qRqBg6PzmHam4vwXCrHXHPsSLtp7aDC-q5_Rp4SKMMrKgqGeFMxKvp2QvBXjuOFUGBKNyswadUx7k62GaaSC56JGk2R60Aoyk-2k8MZo6P4QXANsIciJXc2Jh0"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
-<div class="absolute bottom-6 left-6 right-6">
-<p class="font-headline text-xs font-bold uppercase tracking-widest text-primary mb-2">Editor's Note</p>
-<p class="font-body text-sm text-on-surface italic">"Clarity and natural lighting ensure the highest classification confidence."</p>
-</div>
-</div>
-</div>
-<!-- Interaction Zone — 8 cols -->
-<div class="lg:col-span-8">
+<!-- Upload Zone — full width -->
+<div>
 <div class="bg-surface-container-low p-2 rounded-[2rem]" id="upload-container">
 <div class="relative min-h-[420px] border-2 border-dashed border-outline-variant rounded-[1.8rem] flex flex-col items-center justify-center p-12 hover:bg-surface-container transition-all cursor-pointer group" id="drop-zone">
 <input accept="image/*" class="hidden" id="file-input" type="file"/>
 <!-- Initial State -->
 <div class="text-center" id="initial-state">
-<div class="w-20 h-20 bg-surface-container-highest rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-4xl" data-icon="upload_file">upload_file</span>
-</div>
+<img src="https://api.iconify.design/tabler/dog.svg?color=%23a3a6ff&width=128&height=128" class="w-32 h-32 mb-6 mx-auto block opacity-30 group-hover:opacity-50 group-hover:scale-110 transition-all" alt=""/>
 <h3 class="text-2xl font-headline font-semibold mb-2">Drop Your Dog Photo</h3>
 <p class="text-on-surface-variant mb-8">Drag &amp; drop here or click to browse</p>
 <span class="text-xs font-label uppercase tracking-widest text-outline-variant">Supported: JPG, PNG, WEBP</span>
